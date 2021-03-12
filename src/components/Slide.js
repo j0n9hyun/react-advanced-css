@@ -1,5 +1,8 @@
 import React from 'react';
 import '../static/css/slide.scss';
+import Maple from '../static/image/maple.jpg';
+import styled from 'styled-components';
+
 const Slide = () => {
   return (
     <div class='slide'>
@@ -8,7 +11,10 @@ const Slide = () => {
       <input type='radio' name='pos' id='pos3' />
       <input type='radio' name='pos' id='pos4' />
       <ul>
-        <li></li>
+        <li>
+          <img src={Maple} alt='maple' />
+        </li>
+
         <li></li>
         <li></li>
         <li></li>
