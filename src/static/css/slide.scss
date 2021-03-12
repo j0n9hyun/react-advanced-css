@@ -1,0 +1,83 @@
+@import '~open-color/open-color';
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  height: 500px;
+  position: relative;
+  overflow-x: hidden;
+  ul {
+    width: calc(100% * 4);
+    display: flex;
+    transition: 1s;
+  }
+  li {
+    width: calc(100% / 4);
+    height: 500px;
+    list-style: none;
+  }
+  li:nth-child(1) {
+    background: #ffa;
+  }
+  li:nth-child(2) {
+    background: #faa;
+  }
+  li:nth-child(3) {
+    background: #afa;
+  }
+  li:nth-child(4) {
+    background: #aaf;
+  }
+  input {
+    display: none;
+  }
+  .bullet {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  .bullet label {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    display: inline-block;
+    background: #fff;
+    font-size: 0;
+    transition: 0.5s ease-out;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  #pos1:checked ~ ul {
+    margin-left: 0;
+  }
+  #pos2:checked ~ ul {
+    margin-left: -100%;
+  }
+  #pos3:checked ~ ul {
+    margin-left: -200%;
+  }
+  #pos4:checked ~ ul {
+    margin-left: -300%;
+  }
+
+  #pos1:checked ~ .bullet label:nth-child(1),
+  #pos2:checked ~ .bullet label:nth-child(2),
+  #pos3:checked ~ .bullet label:nth-child(3),
+  #pos4:checked ~ .bullet label:nth-child(4) {
+    background: #666;
+  }
+}
