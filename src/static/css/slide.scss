@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
+  height: 100%;
 }
 
 * {
@@ -12,7 +13,7 @@ html {
 }
 
 .slide {
-  height: 700px;
+  height: 1000px;
   position: relative;
   overflow-x: hidden;
   ul {
@@ -22,21 +23,22 @@ html {
   }
   li {
     width: calc(100% / 4);
-    height: 700px;
+    height: 1000px;
     list-style: none;
   }
-  li:nth-child(1) {
-    background: #ffa;
-  }
-  li:nth-child(2) {
-    background: #faa;
-  }
-  li:nth-child(3) {
-    background: #afa;
-  }
-  li:nth-child(4) {
-    background: #aaf;
-  }
+  // li:nth-child(1) {
+  //   background: #ffa;
+  // }
+  // li:nth-child(2) {
+  //   background: #faa;
+  // }
+  // li:nth-child(3) {
+  //   background: #afa;
+  // }
+  // li:nth-child(4) {
+  //   background: #aaf;
+  // }
+
   input {
     display: none;
   }
@@ -79,5 +81,33 @@ html {
   #pos3:checked ~ .bullet label:nth-child(3),
   #pos4:checked ~ .bullet label:nth-child(4) {
     background: #666;
+  }
+}
+
+.test {
+  overflow: hidden;
+}
+
+.test img {
+  // object-fit: cover;
+  // transition: transform 0.5s;
+  background-size: cover;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  // -webkit-animation-name: example;
+
+  @keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2.5);
+    }
+    100% {
+      transform: scale(3.5);
+    }
   }
 }
