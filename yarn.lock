@@ -7012,6 +7012,11 @@ jsprim@^1.2.2:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+ken-burns-carousel@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/ken-burns-carousel/-/ken-burns-carousel-0.2.5.tgz#57a97230161bbdfc6c590891294bd705510010e9"
+  integrity sha512-MDdQrUVN1K6JQjliHDq5JiCzDrKKb5CFMcn+f7CLXho2GfwDwtyzmCQY4OztR84778ZUtuCvYtAnIDYgDKcVOw==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"

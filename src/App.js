@@ -1,7 +1,7 @@
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Slide from './components/Slide';
-import KenBurns from './components/KenBurns';
+import Test from './components/Test';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/slide' exact component={Slide} />
-          <Route path='/kenburns' exact component={KenBurns} />
+          <Route path='/test' exact component={Test} />
         </Switch>
       </Router>
     </>
