@@ -30,7 +30,7 @@ const RandomHeight = () => {
 
     function ChangeHeight() {
       for (let i = 0; i < box.length; i++) {
-        let RandomBox = Math.floor(Math.random() * 500 + 300);
+        let RandomBox = Math.floor(Math.random() * 500 + 350);
         let RandomBg = boxBg[Math.floor(Math.random() * boxBg.length)];
         box[i].style.height = `${RandomBox}px`;
         box[i].style.background = RandomBg;
@@ -55,11 +55,11 @@ const RandomHeight = () => {
         <div className='box'>8</div>
         <div className='box'>9</div>
       </section>
-      <section className='first'>
+      {/* <section className='first'>
         <div className='box'>10</div>
         <div className='box'>11</div>
         <div className='box'>12</div>
-      </section>
+      </section> */}
     </div>
   );
 };
