@@ -40,22 +40,22 @@ const RandomHeight = () => {
   });
   return (
     <div className='container'>
-      <section className='slice'>
+      <section className='first'>
         <div className='box'>1</div>
         <div className='box'>2</div>
         <div className='box'>3</div>
       </section>
-      <section className='slice'>
+      <section className='first'>
         <div className='box'>4</div>
         <div className='box'>5</div>
         <div className='box'>6</div>
       </section>
-      <section className='slice'>
+      <section className='first'>
         <div className='box'>7</div>
         <div className='box'>8</div>
         <div className='box'>9</div>
       </section>
-      <section className='slice'>
+      <section className='first'>
         <div className='box'>10</div>
         <div className='box'>11</div>
         <div className='box'>12</div>

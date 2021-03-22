@@ -4,6 +4,7 @@ import Slide from './components/Slide';
 import Test from './components/Test';
 import Kenburns from './components/Kenburns';
 import RandomHeight from './components/RandomHeight';
+import Lab from './components/Lab';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/test' exact component={Test} />
           <Route path='/kenburns' exact component={Kenburns} />
           <Route path='/randomheight' exact component={RandomHeight} />
+          <Route path='/lab' exact component={Lab} />
         </Switch>
       </Router>
     </>
