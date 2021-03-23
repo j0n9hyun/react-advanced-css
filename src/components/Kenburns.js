@@ -42,12 +42,12 @@ const Kenburns = () => {
       imgs[pageNum].style.background = bgArray[pageNum][0];
     }
 
-    for (let i = 0; i < pointBtnAll.length; i++) {
-      pointBtnAll[i].addEventListener('click', function () {
-        pageNum = i;
-        pageChangeFunc();
-      });
-    }
+    // for (let i = 0; i < pointBtnAll.length; i++) {
+    //   pointBtnAll[i].addEventListener('click', function () {
+    //     pageNum = i;
+    //     pageChangeFunc();
+    //   });
+    // }
     pageChangeFunc();
   });
   return (
